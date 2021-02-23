@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+     {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <style>
+        body{
+        height:100%;
+            background-image:url('{% static "images/log.jpg" %}');
+            background-repeat:no-repeat;
+            background-size : cover;
+            background-position:center;
+            width: 1024px;
+            background-color:black;
+
+            min-height: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .log
+        {
+            margin:auto;
+            height:250px;
+            width:500px;
+            border-radius:10px;
+            background-color:rgba(0,0,0,0.6);
+            align-items:center;
+        }
+        .sty
+        {
+            font-size:30px;
+            color:white;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <h1 style = "font-size: 700%;text-align:center;color:black;font-family: algerian, courier">Railway Managment System</h1>            
+            
+    <h2 style="text-align:center;color:blue;font-family: 'Chelsea Market', cursive;font-size:400%">Log In</h2>
+    
+    <div class="log">
+        <br/>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            <span class="sty">Username:</span><input style= "display: inline-block;font-family: "Times New Roman", Times, serif;text-align:left" type="text" name="username"><br/>
+            <span class="sty">Password:</span><input type="password" name="password"><br/>
+
+            <input style= 'font-size:30px;border-radius:10px' type="submit" value="Login"><br/>
+
+        </form>
+        <a href="/register/" style="float:right"><button class="btn btn-success" >Register</button></a>
+    </div>
+</body>
+
+</html>
