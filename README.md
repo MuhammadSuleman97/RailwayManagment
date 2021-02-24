@@ -5,5 +5,5 @@ It is a Simple Railway Reservation System that allows User to Search Trains,Book
 It also has Admin side which allows extra features like Add Routes,Stations,Trains.
 
 Login Credentials
-Admin Side :    Uid-'admin'       Pass-'Suleman2597' 
+Admin Side :    Uid-'admin123'       Pass-'Suleman2597' 
 
