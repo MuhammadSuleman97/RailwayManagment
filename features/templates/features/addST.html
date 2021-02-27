@@ -5,8 +5,11 @@
 
 <form action="" method="post">
     {%csrf_token%}
-    Station ID:<input type="text" name="sid">
-    Station Name:<input type="text" name="sname">
+    <span class="colorr">
+    Station ID: </span><input type="text" name="sid">
+    
+    <span class="colorr">
+    Station Name: </span><input type="text" name="sname">
     <input type="submit" class="btn btn-success">
 </form>
 {%endblock%}
