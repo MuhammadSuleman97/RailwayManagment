@@ -29,7 +29,7 @@
             height:250px;
             width:500px;
             border-radius:10px;
-            background-color:rgba(0,0,0,0.3);
+            background-color:rgba(0,0,0,0.6);
             align-items:center;
         }
         .sty
@@ -43,7 +43,7 @@
 </head>
 <body>
 
-    <h1 style = "font-size: 700%;text-align:center;color:black;font-family: algerian, courier">Pakistan Railway System</h1>
+    <h1 style = "font-size: 700%;text-align:center;color:black;font-family: algerian, courier">Pakistan Railway Management System</h1>
 
     <h2 style="text-align:center;color:blue;font-family: 'Chelsea Market', cursive;font-size:400%">LOG IN</h2>
 
@@ -52,7 +52,7 @@
 
         <form action="" method="POST">
             {% csrf_token %}
-            <span class="sty" Style = "margin: 0 auto" >Username:</span><input  type="text" name="username"><br/>
+            <span class="sty" Style = "margin: 0 auto" >Username:</span><input style= "display: inline-block;margin:0 auto;font-family: "Times New Roman", Times, serif;text-align:left" type="text" name="username"><br/>
             <span class="sty">Password:</span><input style = "margin: 0 auto;"type="password" name="password"><br/>
 
             <input style= 'font-size:30px;border-radius:10px;text-align:center' type="submit" value="Login"><br/>
