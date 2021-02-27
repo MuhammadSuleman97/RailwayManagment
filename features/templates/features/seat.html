@@ -6,12 +6,12 @@
     <br/><br/>
     <form class="form-inline" style="margin-left:200px;"action="trains" method="POST">
         {% csrf_token %}
-        <span class="sty" style="font-size:30px;color:black;">Source:</span><select name="src">
+        <span class="sty" style="font-size:30px;color:white;">Source:</span><select name="src">
             {% for i in a %}
             <option value="{{i.sid}}">{{i.sname}}</option>
             {%endfor%}
         </select>
-        <span class="sty" style="font-size:30px;color:black;">Destination:</span>
+        <span class="sty" style="font-size:30px;color:white;">Destination:</span>
         <select name="des">
             {% for i in a %}
             <option value="{{i.sid}}">{{i.sname}}</option>
