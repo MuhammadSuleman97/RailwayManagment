@@ -4,12 +4,11 @@
 
 
 <form action="" method="post">
-<div class="a">
     {%csrf_token%}
-    Train Number:<input type="text" name="tno">
+    <p style= "color:white;">Train Number:<input type="text" name="tno">
     Train Name:<input type="text" name="tname">
     Select Route:<select name="rid">
-</div>
+    </p>
     {%for i in tr%}
         <option value="{{i.rid}}">{{i.ostation}}-{{i.dstation}}</option>
     {%endfor%}
@@ -17,7 +16,3 @@
     <input type="submit" class="btn btn-success">
 </form>
 {%endblock%}
-
-.a{
-    color:white;
-}
