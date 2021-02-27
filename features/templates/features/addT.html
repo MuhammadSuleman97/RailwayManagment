@@ -5,10 +5,12 @@
 
 <form action="" method="post">
     {%csrf_token%}
-    <div class="colorr">
-    Train Number:</div><input type="text" name="tno">
-    Train Name:<input type="text" name="tname">
-    Select Route:<select name="rid">
+    <span class="colorr">
+    Train Number:</span><input type="text" name="tno">
+    <span class="colorr">
+    Train Name:</span><input type="text" name="tname">
+    <span class="colorr">
+    Select Route:</span><select name="rid">
     {%for i in tr%}
         <option value="{{i.rid}}">{{i.ostation}}-{{i.dstation}}</option>
     {%endfor%}
