@@ -8,8 +8,9 @@
             </div>
             <div class="col-lg-6"></div>
             <div class="col-lg-1"><span class="sty" style="font-size:17px;color:white;">Welcome:{{request.user}}</span></div>
-            <div class="col-lg-1"><a href="logout"><button class="btn btn-danger">Log Out</button> </a></div>
+            
         </div>
+        <div class="col-lg-1"><a href="logout"><button class="btn btn-danger">Log Out</button> </a></div>
         <div class="row" style="margin-top:400px;">
             <div class="col-lg-1"></div>
             {% if request.user.is_superuser %}
