@@ -2,13 +2,12 @@
 {% block body%}
 <h2 style="text-align:center;"><span class="sty" style="font-size:50px;color:black;">Add Stations</span></h2>
 
-body{
-            background-image:url('{% static "images/Img/addS.jpg"%}');
+<style>background-image:url('{% static "images/Img/addS.jpg"%}');
             background-size:100%;
-            background-repeat:no-repeat;
+            background-repeat:no-repeat;</style>
+            
 
 
-        }
 <form action="" method="post">
     {%csrf_token%}
     Station ID:<input type="text" name="sid">
