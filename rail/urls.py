@@ -24,7 +24,6 @@ urlpatterns = [
     path('register/',views.Reg,name="reg"),
     path('logout/',views.logout,name="logout"),
     path('home/',include('home.urls',namespace="home"),name="home"),
-    path('',views.loginn,name="loginn"),
-
+    path('',views.log,name="log"),
 
 ]
