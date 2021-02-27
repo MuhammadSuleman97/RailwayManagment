@@ -156,13 +156,13 @@ def cva(request):
         cls=request.POST['cls']
         p=0
         if cls=='AC':
-            p=120*o
+            p=1500*o
         if cls=='SL':
-            p=80*o
+            p=1200*o
         if cls=='3A':
-            p=100*o
+            p=800*o
         if cls=='2S':
-            p=50*o
+            p=400*o
         dt=request.POST['dt']
         c=0
         a=Reservation.objects.filter(tno=tn1,cls=cls,date=dt)
