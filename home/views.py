@@ -14,7 +14,7 @@ def logout(request):
     auth.logout(request)
     return redirect("login")
 
-def login(request):
+def loginn(request):
     return render(request,'features/login.html')
 
 def log(request):
