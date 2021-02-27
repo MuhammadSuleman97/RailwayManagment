@@ -5,7 +5,7 @@
 
 <form action="" method="post">
     {%csrf_token%}
-    Train Number:<input type="text" name="tno">
+    <p style= "color:white">Train Number:</p><input type="text" name="tno">
     Train Name:<input type="text" name="tname">
     Select Route:<select name="rid">
     {%for i in tr%}
