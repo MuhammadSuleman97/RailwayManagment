@@ -62,7 +62,7 @@ def Reg(request):
                 if user.is_active:
                     login(request,user)
                     #return render(request,'features/home.html')
-                    return redirect("http://127.0.0.1:8000/")
+                    return redirect('log')
             return HttpResponse('<h1>VALID</h1>')
         return HttpResponse(template.render({'form':form},request))
     else:
