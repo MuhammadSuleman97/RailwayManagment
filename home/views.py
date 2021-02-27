@@ -12,10 +12,8 @@ def home(request):
 
 def logout(request):
     auth.logout(request)
-    return redirect("login")
+    return redirect('log')
 
-def loginn(request):
-    return render(request,'features/login.html')
 
 def log(request):
     template = loader.get_template('features/login.html')
