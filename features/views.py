@@ -245,7 +245,7 @@ def book(request):
                 b.tno=tn1
                 b.status="C"
                 b.nos=30-c
-                b.amt=200
+                b.amt=1500
                 b.date=dt
                 b.user=request.user
                 b.pnr=cp+1
@@ -342,7 +342,7 @@ def cn(request):
                     b.tno = i.tno
                     b.status = "C"
                     b.nos = c
-                    b.amt = 200
+                    b.amt = 1500
                     b.date = i.date
                     b.user = i.user
                     b.pnr = i.pnr
