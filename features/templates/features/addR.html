@@ -5,13 +5,16 @@
 
 <form action="" method="post">
     {%csrf_token%}
-    Route ID:<input type="text" name="rid">
-    Origin Station:<select name="ostation">
+    <span class="colorr">
+    Route ID:</span><input type="text" name="rid">
+    <span class="colorr">
+    Origin Station:</span><select name="ostation">
         {%for i in stn%}
         <option value="{{i.sid}}">{{i.sname}}</option>
         {%endfor%}
     </select>
-    Destination Station:<select name="dstation">
+    <span class="colorr">
+    Destination Station:</span><select name="dstation">
         {%for i in stn%}
         <option value="{{i.sid}}">{{i.sname}}</option>
         {%endfor%}
