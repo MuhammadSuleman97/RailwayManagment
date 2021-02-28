@@ -19,6 +19,9 @@
 
 
         }
+        .clr{
+            color:white;
+        }
         .rform
         {
             padding:20px 50px;;
@@ -36,10 +39,10 @@
         </style>
 </head>
 <body>
-    <h1 style="color:red;text-align:center;font-family:courier,helvetica;font-size:400%;">Register</h1>
+    <h1 style="color:white;text-align:center;font-family:courier,helvetica;font-size:400%;">Register</h1>
     {%if form.errors%}
 
-    <h3>{{form.errors}}</h3>
+    <h3><li class="clr">{{form.errors}}</li></h3>
 
     {%else%}
     <form class="rform" action="" method="POST">
