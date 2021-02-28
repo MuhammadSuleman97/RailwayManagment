@@ -133,7 +133,7 @@ def addRT(request):
             a.tno = t1
             s1=Station.objects.get(sid=data['sid'])
             a.sid = s1
-            r1=Route.objects.get(rid=data['rid'])
+            r1=Route.objects.filter(rid=data['rid'])
             a.rid = r1
             a.order=data['order']
             a.atime=data['atime']
